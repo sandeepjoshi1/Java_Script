@@ -2,7 +2,7 @@
 // 7 Type :- String, Number, Boolean, Null, Undefined, Symbol, BigInt
 myName = "Sandeep"; //String Datatype
 console.log(myName);
-console.log(typeof string);
+console.log(typeof myName);
 
 const myNumber = 44;
 console.log(myNumber);
