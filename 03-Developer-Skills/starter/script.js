@@ -71,7 +71,7 @@ const measureKelvin = function () {
   };
   //b)Find
   // console.log(measurement);
-  console.table(measurement);
+  // console.table(measurement);
 
   // console.log(measurement.value);
   // console.warn(measurement.value);
@@ -84,8 +84,8 @@ const measureKelvin = function () {
 const calcTempAmplituteNew = function (t1, t2) {
   const temps = t1.concat(t2);
   // console.log(temps);
-  let max = 0;
-  let min = 0;
+  let max = temps[0];
+  let min = temps[0];
   for (let i = 0; i < temps.length; i++) {
     const curTemp = temps[i];
     if (typeof curTemp !== 'number') continue;
@@ -97,6 +97,6 @@ const calcTempAmplituteNew = function (t1, t2) {
 };
 const amplituteNew = calcTempAmplituteNew(
   [2, 3, 4, 8, 9],
-  [10, 11, 26, 'error', '2z']
+  [10, 11, 26, 'error', 1]
 );
 console.log(amplituteNew);
